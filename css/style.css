@@ -24,33 +24,43 @@ img {
 /* Menu */
 
 header{
+    font-family: 'Roboto';
     background-color: #605CA8;
-    padding: 0 80px 0;
+    padding: 8px 80px;
 }
 
-.menu .conainer{
+.container-header{
     margin: 0;
+    padding: 0;
+}
+
+.linha-header{
+    margin: 0;
+    padding: 0;   
+}
+
+.menu-nav{
+    padding: 0;
 }
 
 .menu-nav ul{
- float: right;
- list-style: none;
+    float: right;
+    list-style: none;
 }
 
 .menu-nav ul li{
     display: inline-block;
+    padding: 19px 12px;
 }
 
 .menu-nav ul li a {
     display: inline-block;
-    padding: 19px;
-    margin: auto;
     font-weight: 500;
     color: #ecf0f5;
 }
 
 .menu-logo{
-    padding-top: 10px;
+    padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -74,15 +84,6 @@ header{
     box-shadow: 0 -6px 0 1px #282828,0 0 0 1px #282828,0 6px 0 1px #282828; 
 
 }
-
-
-
-
-
-
-
-
-
 
 /* Main */
 main{
@@ -199,14 +200,24 @@ main div p{
 
 /* Footer */
 footer{
-    
+    font-family: 'Roboto';
+    height: 230px;
     background-color: #484581;
-    padding-top: 50px;
+    padding: 45px 0 45px 0;
 
 }
 
-.footer-logo {
-    padding-top: 10px;
+footer .container{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-logo{
+    height: 62px;
+}
+
+.footer-nav{
+    height: auto;
 }
 
 .footer-nav ul{
@@ -216,20 +227,22 @@ footer{
 
 .footer-nav ul li{
     display: inline-block;
+    margin: 0 12px;
 }
 
 .footer-nav ul li a {
     display: inline-block;
-    padding: 19px;
     font-weight: 500;
     color: #ecf0f5;
 }
 
 /*  cima direita baixo esquerda */
 
+.footer-low{
+    margin: 35px 0 0 5px;
+}
+
+
 footer p{
     color: #ecf0f5;
-    padding-left: 20px;
-    padding-top: 20px;
-
 }

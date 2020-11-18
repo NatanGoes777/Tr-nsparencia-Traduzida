@@ -1,0 +1,47 @@
+/* Apresentacao*/
+.apresentacao h2{
+    text-align: start;
+    color: #252525;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: .2rem;
+}
+.apresentacao p{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+
+
+/* sobre */
+.sobre {
+    padding-bottom: 40px;
+}
+
+.sobre-item h3 {
+    color: #252525;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: .2rem;
+
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f1f1f171;
+    margin-bottom: 1%;
+}
+
+.sobre-item p {
+    text-align: center;
+}

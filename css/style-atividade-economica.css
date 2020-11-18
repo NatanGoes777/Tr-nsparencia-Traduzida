@@ -1,0 +1,59 @@
+/*  ------------------------------------------------------------------------
+                                Pag Atividade Economica 
+    ------------------------------------------------------------------------   */
+
+.title h2{
+    text-align: left;
+    color: #252525;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+.grafico01-item1 h3{
+    text-align: left;
+    color: #252525;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.grafico01-item1 h4{
+    text-align: left;
+    font-size: 1em;
+}
+
+.grafico01-item2 p{
+    text-align: center;
+    color: #252525;
+    font-size: 1em;
+}
+
+
+.grafico02-item1 h3{
+    text-align: left;
+    color: #252525;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.grafico02-item2 p{
+    text-align: center;
+    color: #252525;
+    font-size: 1em;
+}
+
+
+.grafico03-item1 h3{
+    text-align: left;
+    color: #252525;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.grafico03-item2 p{
+    text-align: center;
+    color: #252525;
+    font-size: 1em;
+}

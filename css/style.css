@@ -52,6 +52,7 @@ header{
 }
 
 .menu-nav ul li a {
+    text-decoration: none;
     display: inline-block;
     font-weight: 500;
     color: #ecf0f5;
@@ -68,6 +69,7 @@ header{
     .menu-nav ul li a{
         padding-left: 0px;
         margin-left: 0px;
+        text-decoration: none;
     }
 }
 
@@ -123,6 +125,7 @@ main div p{
 
 .main-nav ul li a{
     color: #ecf0f5;
+    text-decoration: none;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -143,56 +146,6 @@ main div p{
         padding-left: 0px;
         justify-content:left;    }
 }
-
-
-/* Apresentacao*/
-.apresentacao h2{
-    text-align: start;
-    color: #252525;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 0;
-    margin-bottom: .2rem;
-}
-.apresentacao p{
-    padding-top: 10px;
-    padding-bottom: 40px;
-    text-align: center;
-
-}
-
-
-/* sobre */
-.sobre {
-    padding-bottom: 40px;
-}
-
-.sobre-item h3 {
-    color: #252525;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 0;
-    margin-bottom: .2rem;
-
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    font-size: 18px;
-    background-color: #f1f1f171;
-    margin-bottom: 1%;
-}
-
-.sobre-item p {
-    text-align: center;
-}
-
 
 /* Footer */
 footer{
@@ -226,6 +179,7 @@ footer .container{
 }
 
 .footer-nav ul li a {
+    text-decoration: none;
     display: inline-block;
     font-weight: 500;
     color: #ecf0f5;
@@ -238,221 +192,3 @@ footer .container{
 footer p{
     color: #ecf0f5;
 }
-
-
-/*  ------------------------------------------------------------------------
-                                Pag Sinopse 
-    ------------------------------------------------------------------------   */
-.sinopse{
-    padding: 30px;
-}
-
-.sinopse h4{
-    text-align: center;
-    color: #252525;
-    font-size: 1.25em;
-    padding-bottom: 15px;
-}
-
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    font-size: 18px;
-    background-color: #f1f1f171;
-    margin-bottom: 1%;
-}
-
-.sinopse-nav{
-    padding: 0;
-    margin-top: 0;
-    background: rgb(220,220,220);
-    /* width: 30%; */
-    /* height: 476px; */
-}
-
-.sinopse-nav a{
-    text-decoration: none;
-    color: black;
-}
-
-.sinopse-nav li:hover{
-    background: gray;
-}
-
-.sinopse-nav li{
-    height: 96px;
-    list-style: none;
-    padding: 20px 0 0px 30px;
-    border: 1px solid black;
-}
-
-.sinopse-nav-ul{
-    padding-left: 0;
-    margin-top: 0;
-    font-size: 1.25em;
-}
-
-.sinopse-nav-ul ul{
-    display: none;
-    padding-left: 10px;
-}
-
-.sinopse-nav-ul li:hover ul{
-    display: block;
-}
-
-.second-ul{
-    margin-left: 0;
-    padding-left: 0;    
-}
-
-.second-ul li{
-    height: auto;
-    padding-top: 1px;
-    border: none;
-}
-
-#li1{
-    font-size: 0.75em;
-}
-
-#li2{
-    font-size: 0.75em;
-}
-
-.sub-arrow:after{
-    content: '\203A';
-    float: right;
-    margin-right: 20px;
-}
-
-.sub-arrow-s:after{
-    content: '\203A';
-    float: right;
-    margin-right: 40px;
-}
-
-#li1:hover {
-    color: white;
-}
-
-#li2:hover {
-    color: white;
-}
-
-
-/*  ------------------------------------------------------------------------
-                                Pag Atividade Economica 
-    ------------------------------------------------------------------------   */
-
-.title h2{
-    text-align: left;
-    color: #252525;
-    font-size: 1.5em;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-
-.grafico01-item1 h3{
-    text-align: left;
-    color: #252525;
-    font-size: 1.25em;
-    font-weight: 600;
-}
-
-.grafico01-item1 h4{
-    text-align: left;
-    font-size: 1em;
-}
-
-.grafico01-item2 p{
-    text-align: center;
-    color: #252525;
-    font-size: 1em;
-}
-
-
-.grafico02-item1 h3{
-    text-align: left;
-    color: #252525;
-    font-size: 1.25em;
-    font-weight: 600;
-}
-
-.grafico02-item2 p{
-    text-align: center;
-    color: #252525;
-    font-size: 1em;
-}
-
-
-.grafico03-item1 h3{
-    text-align: left;
-    color: #252525;
-    font-size: 1.25em;
-    font-weight: 600;
-}
-
-.grafico03-item2 p{
-    text-align: center;
-    color: #252525;
-    font-size: 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.titulo-indicador{
-    position: absolute;
-    right: 50%;
-    top: 300px;
-}
-
-.lista_graficos{
-    position: absolute;
-    right: 12%;
-    top: 400px;
-    width: 50%;
-}
-
-.lista_graficos li{
-    height: 60px;
-}
-
-.lista_graficos a{
-    position: absolute;
-    margin-top: 8px;
-}
-
-/*
-table, th, td {
-    border: 1px solid rgb(8, 208, 243);
-    border-collapse: collapse;
-    font-size: 20px;
-    padding: 1%;
-}
-*/

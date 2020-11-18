@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Transparência Traduzida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- MENU -->
+    <header class="menu">
+        <div class="container-header">
+            <div class="row linha-header">
+                <a class="menu-logo col-md-4" href="http://www.transparenciatraduzida.ufs.br/index.html" alt="Transparência Traduzida" title="Transparência Traduzida"> 
+                    <img src="../img/logotipo-5.png" title="Transparência Traduzida" style="height: 61px;"> 
+                </a>
+                <nav class="menu-nav col-md-8">
+                    <ul>
+                        <li> 
+                            <a href="http://www.transparenciatraduzida.ufs.br/index.html">Início</a> 
+                        </li>
+                        <li> 
+                            <a href=http://www.transparenciatraduzida.ufs.br/quemSomos.html> Quem somos</a> 
+                        </li>
+                        <li> 
+                            <a href=http://www.transparenciatraduzida.ufs.br/projetos.html> Projetos</a> 
+                        </li>
+                    </ul>
+                </nav>            
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 >Anuário  Socioeconômico de Sergipe</h1>
+            <p>Novembro de 2019 - Ano 2</p>
+        </div>
+        <div class="container">   
+            <div class="row">
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a class="item1 col-md-4" href="../index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="#">Editorial</a>
+                        </li>
+                        <li>
+                            <a href="sinopse.html">Sinopse</a>
+                        </li>
+                        <li>
+                            <a href="#">Destaque</a>
+                        </li>
+                        <li>
+                            <a href="#">Dados Comparados</a>
+                        </li>
+                    </ul>                    
+                </nav> 
+            </div>
+        </div>
+    </main>
+
+    
+    <section class="container title">
+        <div class="row">
+            <h2 class="col-8">Produto Interno Bruto</h2>            
+            <div class="col-3">
+                <img style="display: inline;" onclick="trocarParaTabela()" id="icon-tabela" src="../img/Imagem2.png" alt="icon tabela">
+                <img style="display: inline;" id="icon-csv" src="../img/Imagem3.png" alt="icon csv">
+            </div>
+            <div class="col-1">
+                <a href="./sinopse.html"><img style="text-align:end;" id="icon-return" src="../img/Imagem4.png" alt="icon return"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== grafico01 =================================== -->
+
+    <section id="grafico01" style= "display: none;">
+
+        <div class="container">
+            <div class="row">
+            
+                <div id="div_grafico01" class="grafico01-item1 col-8 card">
+                    
+                    <h3>Gráfico 2.1: Se: valor bruto da produção - Agricultura</h3>
+                    <h4>R$ milhoes</h4>
+                    <iframe width="100%" height="486"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYjExNjU1MmEtNDU5OC00NGM4LWE4ZjEtMGRlYmEzMjEzNzllIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9&pageName=ReportSection"
+                        frameborder="0" allowFullScreen="true">
+                    </iframe>
+
+                    <p class="fonte"> Fonte: SCR/IBGE </p>
+                </div>
+
+                <div id="tabela_grafico01" class="columnGrafico grafico01-tabela col-8 card" style="display: none;">
+                    <img src="../img/tabela-especificacao-01.png">	
+                </div>
+
+                <div class="columnSideGrafico grafico01-item2 col-4 card">
+                    <p>O desempenho do VAB da agricultura em R$ foi melhor
+                        do que em volume, mencionado na página anterior, exceto
+                        pelo ano de 2017, o que pode ser visto da comparação
+                        entre os gráficos 2.1 e 2.2.
+                    </p>
+                    <br>
+                    <p>O VAB foi nunca inferior a 3,5 vezes o
+                        consumo intermediário de 2010 a 2017, o
+                        que demonstra a boa rentabilidade da
+                        Agricultura. Apesar disso, o volume
+                        produzido caiu seguidamente entre os anos
+                        de 2014 a 2016, quando também diminuiu
+                        sucessivamente o VAB.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== grafico02 =================================== -->
+
+    <section id="grafico02" style="display: none;">
+
+        <div class="container">
+            <div class="row">
+
+                <div id="div_grafico02" class="grafico02-item1 col-8 card">
+                    <h3>Gráfico 2.2: Se: valor Adicionado Bruto (VAB) - Agricultura</h3>
+                    <iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjFkMWQ2ZmEtNzA4Mi00ZTM5LWEzYmItODBhNGZjM2MzN2M1IiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9&pageName=ReportSectionbbc51fa7ba3144d07141" frameborder="0" allowFullScreen="true"></iframe>
+                    <p> Fonte: SCR/IBGE </p>
+                </div>
+
+                <div id="tabela_grafico02" class="columnGrafico grafico02-tabela col-8 card" style="display: none;">
+                    <img src="../img/tabela-especificacao-02.png">
+                </div>
+
+                <div class="columnSideGrafico grafico02-item2 col-4 card">
+                        <p>O desempenho do VAB da agricultura em R$ foi melhor
+                            do que em volume, mencionado na página anterior, exceto
+                            pelo ano de 2017, o que pode ser visto da comparação
+                            entre os gráficos 2.1 e 2.2.
+                        </p>
+                        <br>
+                        <p>O VAB foi nunca inferior a 3,5 vezes o
+                            consumo intermediário de 2010 a 2017, o
+                            que demonstra a boa rentabilidade da
+                            Agricultura. Apesar disso, o volume
+                            produzido caiu seguidamente entre os anos
+                            de 2014 a 2016, quando também diminuiu
+                            sucessivamente o VAB.
+                        </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== grafico03 =================================== -->
+
+    <section id="grafico03" style="display: none;">
+
+        <div class="container"> 
+            <div  class="row">
+                <div id="div_grafico03" class="grafico03-item1 col-8 card">
+                    <h3>Gráfico 26.5: Ranking dos seis maiores percentuais de pessoas pobres</h3>
+                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYzg5NzQ4YzYtZTQ0My00MWExLWFjZTEtNjRmMjVlMmQ5OWQxIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>                    <p> Fonte: SCR/IBGE </p>
+                </div>
+
+                <div id="tabela_grafico03" class="grafico03-tabela col-8 card" style="display: none;">
+                    <img src="../img/tabela-especificacao-03.png">
+                </div>
+
+                <div class="columnSideGrafico grafico03-item2 col-4 card">
+                    <p>O percentual de pessoas pobres em
+                    Sergipe seguiu, em 2018, a trajetória de
+                    crescimento iniciada em 2015, depois de
+                    uma sequência de queda desde, pelo
+                    menos, 2012. Enquanto o percentual de
+                    pobres em Sergipe em 2018 aumentou, o
+                    do Brasil e Nordeste diminuíram. Esse foi o
+                    primeiro ano, no período do gráfico 26.6,
+                    quando os desempenhos desses
+                    percentuais não se acompanharam
+                    mutuamente.
+                    </p>
+                    <br>
+                    <p>Com o crescimento contínuo de seu
+                    percentual de pobres, Sergipe ocupou em
+                    2018 sua pior colocação frente aos demais
+                    estados brasileiros (6º maior percentual de
+                    pobres), sendo um dos três desses seis
+                    estados de piores percentuais que cujo
+                    percentual aumentou no comparativo entre
+                    2018 e 2012, como representado no gráfico
+                    26.5.
+                    </p>
+                </div>
+                
+            </div>            
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="http://www.transparenciatraduzida.ufs.br/index.html" alt="Transparência Traduzida" title="Transparência Traduzida"> 
+                        <img class="footer-logo" src="../img/logotipo-5.png" title="Transparência Traduzida"> 
+                    </a>
+                </div>
+
+                <nav class="footer-nav col-sm-8">
+                    <ul>
+                        <li> 
+                            <a href="http://www.transparenciatraduzida.ufs.br/index.html">Início</a> 
+                        </li>
+                        <li> 
+                            <a href=http://www.transparenciatraduzida.ufs.br/quemSomos.html> Quem somos</a> 
+                        </li>
+                        <li> 
+                            <a href=http://www.transparenciatraduzida.ufs.br/projetos.html> Projetos</a> 
+                        </li>
+                    </ul>
+                </nav>                
+            </div>
+
+            <div class="row footer-low">
+                <p>Transparência Traduzida © 2018 - Todos os direitos reservados</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+	<!--<script type="var aux = localStorage.getItem(numeroDoGrafico); mostrarGrafico(aux);"></script>-->
+	<script src="../js/sinopse.js" type="text/javascript" ></script>
+
+</html>

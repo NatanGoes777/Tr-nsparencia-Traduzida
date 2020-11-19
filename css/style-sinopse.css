@@ -21,6 +21,17 @@
     font-size: 18px;
     background-color: #f1f1f171;
     margin-bottom: 1%;
+    top: 7%;
+    left: 10%;
+    width: 100%;
+}
+
+.tb-1{
+    padding-left: 10%;
+}
+
+.card th, td{
+    text-align: center;
 }
 
 .sinopse-nav{
@@ -187,9 +198,9 @@ table, th, td {
   border-left: 3px solid transparent;
 }
 .sinopse nav ul li.active a{
-  color: #605CA8;
+  color: cyan;/*#605CA8;*/
   background: #1e1e1e;
-  border-left-color: #605CA8;
+  border-left-color: cyan;/*#605CA8;*/
 }
 .sinopse nav ul li a:hover{
   background: #1e1e1e;
@@ -217,7 +228,7 @@ table, th, td {
   border-left-color: transparent;
 }
 .sinopse nav ul ul li a:hover{
-  color: #605CA8!important;
+  color: cyan/*#605CA8*/!important;
   background: #1e1e1e!important;
 }
 .sinopse nav ul li a span{

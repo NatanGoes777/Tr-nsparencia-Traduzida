@@ -1,28 +1,25 @@
+function mostrarListaDeGraficos(element) {
+    const selectedElement = document.getElementById(element);
+    if(selectedElement.style.display == "inline") {
+        selectedElement.style.display = "none"
+    } else {
+        selectedElement.style.display = "inline";
+    }
 
-var aux = localStorage.getItem("numero_Do_Grafico"); 
-
-console.log(aux);
-
-mostrarGrafico(aux);
-
-function mostrarGrafico(numeroDoGrafico){
-	const selectedElement = document.getElementById(numeroDoGrafico);
-	if(selectedElement.style.display == "none")
-        selectedElement.style.display = "inline"
 }
 
-function trocarParaTabela(){
-	var numeroDoGrafico = localStorage.getItem("numero_Do_Grafico"); 
-	var string1 = "div_" + numeroDoGrafico;
-	var string2 = "tabela_" + numeroDoGrafico;
-	const selectedElement = document.getElementById(string1);
-	const selectedElement2 = document.getElementById(string2);
-
-	if(selectedElement.style.display == "none"){
-		selectedElement.style.display = "inline";
-		selectedElement2.style.display = "none";
-	} else{
-		selectedElement.style.display = "none";
-		selectedElement2.style.display = "inline";
-	}
+function passarParametro(numeroDoGrafico){
+	sessionStorage.setItem("numero_Do_Grafico",numeroDoGrafico);
 }
+
+$('.atv-econ-btn').click(function(){
+	$('nav ul .atv-econ-show').toggleClass("show");
+	$('nav ul .first').toggleClass("rotate");
+});
+$('.serv-btn').click(function(){
+	$('nav ul .serv-show').toggleClass("show1");
+	$('nav ul .second').toggleClass("rotate");
+});
+$('nav ul li').click(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+});

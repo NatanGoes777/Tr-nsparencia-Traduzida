@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style-sinopse.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-home.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <!-- MENU -->
@@ -40,13 +38,14 @@
     <main>
         <div class="container">
             <h1 >Anuário  Socioeconômico de Sergipe</h1>
+            <!-- <p>Novembro de 2019 - Ano 2</p> -->
         </div>
         <div class="container">   
             <div class="row">
                 <nav class="main-nav">
                     <ul>
                         <li>
-                            <a class="item1 col-md-4" href="../pages/index.html">Página Inicial</a>
+                            <a class="item1 col-md-4" href="../pages/index.html"">Página Inicial</a>
                         </li>
                         <li>
                             <a href="#">Editorial</a>
@@ -67,67 +66,47 @@
     </main>
 
 
-    <section class="sinopse">
-
-        <div class="container-sinopse container">
-            <div class="row" style="width: 100vw;">
-
-                <nav class="sidebar">
-                    <div class="text">
-                        Sinopse dos Principais Indicadores Socieconômicos de Sergipe
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#" class="atv-econ-btn">Atividade Econômica
-                              <span id="first" class="fas fa-caret-down first"></span>
-                            </a>
-                            <ul class="atv-econ-show">
-                                <li onclick="mostrarListaDeGraficos('agricultura')" ><a href="#">Agricultura</a></li>
-                                <li onclick="mostrarListaDeGraficos('dh')" ><a href="#">Desenvolvimento Humano, Pobreza e Desigualdade</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Mercado de Trabalho</a></li>
-                        <li><a href="#">Setor Público</a></li>
-                        <li><a href="#">Indicadores Visuais</a></li>
-
-                    </ul>
-                </nav>
-                
-                <div class="col-7">
-                    <div id="agricultura" class="row">
-                        <table class="tb-1 card">
-                            <tr>
-                                <th>Agricultura</th>
-                            </tr>
-                            <tr>
-                                <td><a onclick="passarParametro('grafico01')"  href="../pages/atividadeEconomica.html">Gráfico 2.1 Se:valor bruto da produção - Agricultura</a></td>
-                            </tr>
-                            <tr>
-                                <td><a onclick="passarParametro('grafico02')"  href="../pages/atividadeEconomica.html">Gráfico 2.2 Se:valor Adicionado Bruto (VAB) - Agricultura</a></td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div id="dh" class="row">
-                        <table class="tb-2 card">
-                            <tr>
-                                <th>Desenvolvimento Humano, Pobreza e Desigualdade</th>
-                            </tr>
-                            <tr>
-                                <td> <a onclick="passarParametro('grafico03')" href="../pages/atividadeEconomica.html">Gráfico 26.5 Ranking dos seis maiores percentuais de pessoas pobres</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>            
-                
-            </div>
+    <section class="apresentacao">
+        <div class="container">
+            <h2>Apresentação</h2>
+            <p>Publicação anual do Grupo de Pesquisa em Análise de Dados Econômicos, vinculado ao
+                Departamento de Econômia
+                da Universidade Federal de Sergipe, que tem como objetivo traçar um panorama de Sergipe
+                através de indicadores
+                socioeconômicos do Estado e de seus 75 municípios, visando contribuir como ferramenta
+                de subsídio às ações
+                dos setores público e privado do Estado. 
+            </p>
         </div>
     </section>
 
+    <section class="sobre container">
+        <div class="row">
+            <div class="sobre-item col-sm">
+                <h3>Autores</h3>
+                <p>Luiz Rogério de Camargos</p>
+                <p>Rodrigo Melo Gois</p>
+                <p>Wagner Nóbrega</p> <br>
+                <h3>Colaboradora</h3>
+                <p>Regina Ávila Santos</p>
+            </div>
+            <div class="sobre-item col-sm">
+                <h3>Contato e Informações</h3>
+                <p>Universidade Federal de Sergipe</p>
+                <p>Departamento de Economia</p>
+                <p>Grupo de Pesquisa em Análise de Dados Econômicos</p>
+                <p>Edf. CCSA 2, 1º andar, sala 29</p>
+                <p>Av. Marechal Rondom, s/n, Jardim Rosa Elze</p>
+                <p>CEP 49100-000 - São Cristóvão, SE</p>
+                <p>E-mail: cafecomdados@cafecomdados.com</p>
+                <p>Tel: +55 79 3194-6773</p>
+            </div>                
+        </div>
+    </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
+
             <div class="row">
                 <div class="col-sm-4">
                     <a href="http://www.transparenciatraduzida.ufs.br/index.html" alt="Transparência Traduzida" title="Transparência Traduzida"> 
@@ -155,7 +134,5 @@
 
         </div>
     </footer>
-    
-    <script src="../js/sinopse.js" type="text/javascript"></script>
-
 </body>
+</html>

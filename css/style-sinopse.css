@@ -2,146 +2,48 @@
                                 Pag Sinopse 
     ------------------------------------------------------------------------   */
 .sinopse{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .sinopse h4{
-    text-align: center;
-    color: #252525;
-    font-size: 1.25em;
-    padding-bottom: 15px;
+  text-align: center;
+  color: #252525;
+  font-size: 1.25em;
+  padding-bottom: 15px;
 }
 
-
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    font-size: 18px;
-    background-color: #f1f1f171;
-    margin-bottom: 1%;
-    top: 7%;
-    left: 10%;
-    width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #f1f1f171;
+  margin-bottom: 1%;
+  top: 7%;
+  left: 7%;
+  width: 100%;
 }
 
 .tb-1{
-    padding-left: 10%;
+  padding: 16px 20% 16px 20%;
 }
 
-.card th, td{
-    text-align: center;
+.tb-2{
+  padding: 16px 15% 16px 15%;
 }
 
-.sinopse-nav{
-    padding: 0;
-    margin-top: 0;
-    background: rgb(220,220,220);
-    /* width: 30%; */
-    /* height: 476px; */
+.card th{
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 3px solid;
 }
 
-.sinopse-nav a{
-    text-decoration: none;
-    color: black;
+.card td{
+  padding-top: 25px;
+  text-align: left;
+  line-height: 35px;
 }
-
-.sinopse-nav li:hover{
-    background: gray;
-}
-
-.sinopse-nav li{
-    height: 96px;
-    list-style: none;
-    padding: 20px 0 0px 30px;
-    border: 1px solid black;
-}
-
-.sinopse-nav-ul{
-    padding-left: 0;
-    margin-top: 0;
-    font-size: 1.25em;
-}
-
-.sinopse-nav-ul ul{
-    display: none;
-    padding-left: 10px;
-}
-
-.sinopse-nav-ul li:hover ul{
-    display: block;
-}
-
-.second-ul{
-    margin-left: 0;
-    padding-left: 0;    
-}
-
-.second-ul li{
-    height: auto;
-    padding-top: 1px;
-    border: none;
-}
-
-#li1{
-    font-size: 0.75em;
-}
-
-#li2{
-    font-size: 0.75em;
-}
-
-.sub-arrow:after{
-    content: '\203A';
-    float: right;
-    margin-right: 20px;
-}
-
-.sub-arrow-s:after{
-    content: '\203A';
-    float: right;
-    margin-right: 40px;
-}
-
-#li1:hover {
-    color: white;
-}
-
-#li2:hover {
-    color: white;
-}
-
-.titulo-indicador{
-    position: absolute;
-    right: 50%;
-    top: 300px;
-}
-
-.lista_graficos{
-    position: absolute;
-    right: 12%;
-    top: 400px;
-    width: 50%;
-}
-
-.lista_graficos li{
-    height: 60px;
-}
-
-.lista_graficos a{
-    position: absolute;
-    margin-top: 8px;
-}
-
-/*
-table, th, td {
-    border: 1px solid rgb(8, 208, 243);
-    border-collapse: collapse;
-    font-size: 20px;
-    padding: 1%;
-}
-*/
 
 /*======================================== Side Bar ==================================================*/
 
@@ -158,7 +60,7 @@ table, th, td {
 
 .sinopse .sidebar{
   position: sticky;
-  width: 45%;
+  width: 35vw;
   height: 100%;
   left: 0px;
   background: #1b1b1b;
@@ -241,21 +143,4 @@ table, th, td {
 }
 .sinopse nav ul li a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #202020;
-  z-index: -1;
-  text-align: center;
-}
-.content .header{
-  font-size: 45px;
-  font-weight: 600;
-}
-.content p{
-  font-size: 30px;
-  font-weight: 500;
 }

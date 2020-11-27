@@ -1,11 +1,23 @@
 function mostrarListaDeGraficos(element) {
-    const selectedElement = document.getElementById(element);
-    if(selectedElement.style.display == "inline") {
-        selectedElement.style.display = "none"
-    } else {
-        selectedElement.style.display = "inline";
-    }
 
+	if(element == "agricultura"){
+		document.getElementById("dh").style.display = "none";
+		const selectedElement = document.getElementById(element);
+		if(selectedElement.style.display == "inline") {
+			selectedElement.style.display = "none";
+		} else {
+			selectedElement.style.display = "inline";
+		}
+	}
+	else{
+		document.getElementById("agricultura").style.display = "none";
+		const selectedElement = document.getElementById(element);
+		if(selectedElement.style.display == "inline") {
+			selectedElement.style.display = "none";
+		} else {
+			selectedElement.style.display = "inline";
+		}
+	}
 }
 
 function passarParametro(numeroDoGrafico){

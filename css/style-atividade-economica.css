@@ -2,6 +2,18 @@
                                 Pag Atividade Economica 
     ------------------------------------------------------------------------   */
 
+#icon-tabela{
+    display: inline;
+}
+
+#icon-grafico{
+    display: none;
+}
+
+#icon-csv{
+    display: inline;
+}
+
 .title{
     padding-top: 15px;
     padding-bottom: 1rem;
@@ -17,14 +29,9 @@
     font-weight: 700;
 }
 
-/*#grafico01 {
-    display: none;
-} 
+/*=============================== Grafico 01 =================================*/
 
-#tabela-grafico01{
-    display: none;
-}*/
-.cantainer-grafico01{
+.container-grafico01{
     padding-top: 30px;
     padding-bottom: 30px; 
     margin-bottom: 5%;
@@ -52,7 +59,6 @@
 }
 
 .grafico01-item2{
-    padding-top: 10%;
     border: none;
 }
 
@@ -62,21 +68,50 @@
     font-size: 1em;
 }
 
-.grafico02-item1 h3{
+/*=============================== Grafico 02 =================================*/
+
+.container-grafico02{
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin-bottom: 5%;
+}
+
+.grafico02-item1{
+    border: none;
+    padding-top: 50px;
+}
+
+.cantainer-grafico02 h3{
     text-align: left;
     color: #252525;
     font-size: 1.25em;
     font-weight: 600;
 }
 
+.cantainer-grafico02 h4{
+    text-align: left;
+    font-size: 1em;
+}
+
+.grafico02-tabela{
+    border: none;
+    align-self: center;
+}
+
+.grafico02-item2{
+    border: none;
+    padding-top: 50px;
+}
+
 .grafico02-item2 p{
-    text-align: center;
+    text-align: justify;
     color: #252525;
     font-size: 1em;
 }
 
+/*=============================== Grafico 03 =================================*/
 
-.grafico03-item1 h3{
+/*.grafico03-item1 h3{
     text-align: left;
     color: #252525;
     font-size: 1.25em;
@@ -85,6 +120,45 @@
 
 .grafico03-item2 p{
     text-align: center;
+    color: #252525;
+    font-size: 1em;
+}*/
+
+.container-grafico03{
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin-bottom: 5%;
+}
+
+.grafico03-item1{
+    border: none;
+    padding-top: 50px;
+}
+
+.cantainer-grafico03 h3{
+    text-align: left;
+    color: #252525;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.cantainer-grafico03 h4{
+    text-align: left;
+    font-size: 1em;
+}
+
+.grafico03-tabela{
+    border: none;
+    align-self: center;
+}
+
+.grafico03-item2{
+    border: none;
+    padding-top: 50px;
+}
+
+.grafico03-item2 p{
+    text-align: justify;
     color: #252525;
     font-size: 1em;
 }

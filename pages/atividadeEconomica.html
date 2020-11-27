@@ -46,13 +46,13 @@
                 <nav class="main-nav">
                     <ul>
                         <li>
-                            <a class="item1 col-md-4" href="../index.html">Página Inicial</a>
+                            <a class="item1 col-md-4" href="../pages/index.html">Página Inicial</a>
                         </li>
                         <li>
                             <a href="#">Editorial</a>
                         </li>
                         <li>
-                            <a href="sinopse.html">Sinopse</a>
+                            <a href="../pages/sinopse.html">Sinopse</a>
                         </li>
                         <li>
                             <a href="#">Destaque</a>
@@ -71,8 +71,11 @@
         <div class="row">
             <h2 class="col-8">Produto Interno Bruto</h2>            
             <div class="col-3">
-                <img style="display: inline;" onclick="trocarParaTabela()" id="icon-tabela" src="../img/Imagem2.png" alt="icon tabela">
-                <img style="display: inline;" id="icon-csv" src="../img/Imagem3.png" alt="icon csv">
+                <img onclick="trocarParaTabela()" id="icon-tabela" src="../img/Imagem2.png" alt="icon tabela">
+                <img onclick="trocarParaGrafico()" id="icon-grafico" src="../img/Imagem1.png" alt="icon grafico">
+                <a id="btnDownload" onclick="downloadCsv()" href="">
+                    <img id="icon-csv" src="../img/Imagem3.png" alt="icon csv"> 
+                </a>     
             </div>
             <div class="col-1">
                 <a href="./sinopse.html"><img style="text-align:end;" id="icon-return" src="../img/Imagem4.png" alt="icon return"></a>
@@ -84,7 +87,7 @@
 
     <section id="grafico01" style= "display: none;">
 
-        <div class="cantainer-grafico01 container">
+        <div class="container-grafico01 container">
             <div class="row">
 
                 <div class="container">
@@ -94,16 +97,16 @@
             
                 <div id="div_grafico01" class="grafico01-item1 col-8 card">
                     
-                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTg5MDVlODEtOTA1NS00NTViLWIzNDQtNzE1NDk5YWZhYzYxIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                    <iframe width="700" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTg5MDVlODEtOTA1NS00NTViLWIzNDQtNzE1NDk5YWZhYzYxIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>
 
                     <p class="fonte"> Fonte: SCR/IBGE </p>
                 </div>
 
                 <div id="tabela_grafico01" class="grafico01-tabela col-8 card" style="display: none;">
-                    <img src="../img/tabela-especificacao-01.png">	
+                    <img src="../img/tabela-especificacao-01.png">
                 </div>
 
-                <div class="columnSideGrafico grafico01-item2 col-4 card">
+                <div class="grafico01-item2 col-4 card">
                     <p>O desempenho do VAB da agricultura em R$ foi melhor
                         do que em volume, mencionado na página anterior, exceto
                         pelo ano de 2017, o que pode ser visto da comparação
@@ -128,23 +131,25 @@
 
     <section id="grafico02" style="display: none;">
 
-        <div class="container">
+        <div class="container-grafico02 container">
             <div class="row">
 
-                <div id="div_grafico02" class="grafico02-item1 col-8 card">
+                <div class="container">
                     <h3>Gráfico 2.2: Se: valor Adicionado Bruto (VAB) - Agricultura</h3>
+                </div>
 
-                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYTA3MWNlNDMtMjAwYi00ZDdlLWI4MzUtMWQ3MWVkNzZjYmFmIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                <div id="div_grafico02" class="grafico02-item1 col-8 card">
 
-                    <!--<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjFkMWQ2ZmEtNzA4Mi00ZTM5LWEzYmItODBhNGZjM2MzN2M1IiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9&pageName=ReportSectionbbc51fa7ba3144d07141" frameborder="0" allowFullScreen="true"></iframe>-->
+                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYTA3MWNlNDMtMjAwYi00ZDdlLWI4MzUtMWQ3MWVkNzZjYmFmIiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true">
+                    </iframe>
                     <p> Fonte: SCR/IBGE </p>
                 </div>
 
-                <div id="tabela_grafico02" class="columnGrafico grafico02-tabela col-8 card" style="display: none;">
+                <div id="tabela_grafico02" class="grafico02-tabela col-8 card" style="display: none;">
                     <img src="../img/tabela-especificacao-02.png">
                 </div>
 
-                <div class="columnSideGrafico grafico02-item2 col-4 card">
+                <div class="grafico02-item2 col-4 card">
                         <p>O desempenho do VAB da agricultura em R$ foi melhor
                             do que em volume, mencionado na página anterior, exceto
                             pelo ano de 2017, o que pode ser visto da comparação
@@ -169,11 +174,15 @@
 
     <section id="grafico03" style="display: none;">
 
-        <div class="container"> 
+        <div class="container-grafico03 container"> 
             <div  class="row">
-                <div id="div_grafico03" class="grafico03-item1 col-8 card">
+
+                <div class="container">
                     <h3>Gráfico 26.5: Ranking dos seis maiores percentuais de pessoas pobres</h3>
-                    <iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMzQ5OTU1NWItY2I3Ny00NzEwLThmZmYtNzY4NjE2NGVmYWM3IiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>                  
+                </div>
+
+                <div id="div_grafico03" class="grafico03-item1 col-8 card">
+                    <iframe width="700" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMzQ5OTU1NWItY2I3Ny00NzEwLThmZmYtNzY4NjE2NGVmYWM3IiwidCI6IjhlNTRmODJjLTBmOWQtNGE2Ny1iNTZlLTk5M2I3Y2ExOWVmMiJ9" frameborder="0" allowFullScreen="true"></iframe>                  
                     <p> Fonte: SCR/IBGE </p>
                 </div>
 
@@ -181,7 +190,7 @@
                     <img src="../img/tabela-especificacao-03.png">
                 </div>
 
-                <div class="columnSideGrafico grafico03-item2 col-4 card">
+                <div class="grafico03-item2 col-4 card">
                     <p>O percentual de pessoas pobres em
                     Sergipe seguiu, em 2018, a trajetória de
                     crescimento iniciada em 2015, depois de
